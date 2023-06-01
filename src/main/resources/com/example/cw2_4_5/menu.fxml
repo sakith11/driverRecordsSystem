@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="paneMenu" fx:id="paneMenu" prefHeight="786.0" prefWidth="400.0" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.menuController">
+   <children>
+      <Button id="menuBtnClose" fx:id="menuBtnClose" layoutX="22.0" layoutY="28.0" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Close" />
+      <Button id="menuBtnAdd" fx:id="menuBtnAdd" layoutX="24.0" layoutY="264.0" mnemonicParsing="false" onAction="#onAddClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Edit Drivers " />
+      <Button id="menuBtnPos" fx:id="menuBtnPos" layoutX="24.0" layoutY="77.0" mnemonicParsing="false" onAction="#onPosClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Driver's Championship" />
+      <Button fx:id="menuBtnSimulate" layoutX="22.0" layoutY="212.0" mnemonicParsing="false" onAction="#onSimulateClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Simulate" />
+      <Button fx:id="menuBtnInfo" layoutX="24.0" layoutY="166.0" mnemonicParsing="false" onAction="#onInfoClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Race Information" />
+      <Button fx:id="menuBtnCon" layoutX="22.0" layoutY="121.0" mnemonicParsing="false" onAction="#onConstructoClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Constructor's Championship" />
+      <Button fx:id="menuBtnExport" layoutX="24.0" layoutY="310.0" mnemonicParsing="false" onAction="#onExportClick" prefHeight="27.0" prefWidth="189.0" styleClass="buttons" text="Export/Import" />
+   </children>
+</AnchorPane>

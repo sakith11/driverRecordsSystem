@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneRaceInfo" prefHeight="622.0" prefWidth="429.0" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.raceInfoController">
+   <children>
+      <Text layoutX="26.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Race" />
+      <Text layoutX="28.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Date" />
+      <Text layoutX="28.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Wheather" />
+      <Label fx:id="infoLblRace" layoutX="100.0" layoutY="30.0" text="Label" />
+      <Label fx:id="infoLblWheather" layoutX="100.0" layoutY="87.0" text="Label" />
+      <Label fx:id="infoLblDate" layoutX="100.0" layoutY="59.0" text="Label" />
+      <TableView fx:id="infoTbl" layoutY="179.0" prefHeight="442.0" prefWidth="429.0" styleClass="infotbl">
+        <columns>
+          <TableColumn fx:id="infoTblPos" prefWidth="44.0" text="pos" />
+          <TableColumn fx:id="infoTblName" prefWidth="122.0" text="name" />
+            <TableColumn fx:id="infoTblTeam" prefWidth="114.0" text="team" />
+            <TableColumn fx:id="infoTblCar" prefWidth="90.0" text="car" />
+            <TableColumn fx:id="infoTblPoints" prefWidth="57.0" text="points" />
+        </columns>
+      </TableView>
+      <Button fx:id="infoBtnPosition" layoutX="331.0" layoutY="26.0" mnemonicParsing="false" onAction="#onPositionClick" styleClass="buttons" text="Positions" />
+   </children>
+</AnchorPane>

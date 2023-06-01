@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1091.0" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.simulateController">
+   <children>
+      <DatePicker fx:id="simDate" layoutX="576.0" layoutY="171.0" promptText="select date" style="-fx-background-color: white;" />
+      <Button fx:id="simBtnSimulate" layoutX="860.0" layoutY="171.0" mnemonicParsing="false" onAction="#onSimulateClick" styleClass="buttons" text="simulate" />
+      <TableView fx:id="simTbl" layoutX="112.0" layoutY="325.0" prefHeight="461.0" prefWidth="868.0">
+        <columns>
+          <TableColumn fx:id="simTblRace" prefWidth="152.0" text="race" />
+          <TableColumn fx:id="simTblDate" prefWidth="119.0" text="date" />
+            <TableColumn fx:id="simTblWheather" prefWidth="128.0" text="wheather" />
+            <TableColumn fx:id="simTblFirst" prefWidth="167.0" text="first" />
+            <TableColumn fx:id="simTblSecond" prefWidth="135.0" text="second" />
+            <TableColumn fx:id="simTblThird" minWidth="0.0" prefWidth="162.0" text="third" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="simComboRace" layoutX="56.0" layoutY="171.0" prefWidth="150.0" promptText="select race" styleClass="dropdown" />
+      <ComboBox fx:id="simComboWheather" layoutX="316.0" layoutY="171.0" prefWidth="150.0" promptText="select wheather" styleClass="dropdown" />
+      <ImageView fitHeight="94.0" fitWidth="1092.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/wrc.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="simBtnMenu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMenuClick" styleClass="headerButtons" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" text="menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="simBtnMinimize" layoutX="948.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMinClick" prefHeight="31.0" prefWidth="73.0" styleClass="headerButtons" text="Minimize" textFill="WHITE" />
+      <Button fx:id="simBtnClose" layoutX="1028.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="31.0" prefWidth="57.0" styleClass="headerButtons" text="close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="simBtnExport" layoutX="865.0" layoutY="222.0" mnemonicParsing="false" onAction="#onExportClick" styleClass="buttons" text="export" />
+   </children>
+</AnchorPane>

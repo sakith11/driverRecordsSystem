@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane id="paneMain" fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.mainController">
+   <children>
+      <Button id="mainBtnMenu" fx:id="mainBtnMenu" layoutX="10.0" mnemonicParsing="false" onAction="#onMenuClick" text="menu" StackPane.alignment="TOP_LEFT" />
+   </children>
+</StackPane>

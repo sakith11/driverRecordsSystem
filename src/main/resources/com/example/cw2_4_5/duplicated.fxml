@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<DialogPane fx:id="dialogDup" scaleShape="false" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.dupController">
+   <content>
+      <AnchorPane fx:id="paneDup" prefHeight="500.0" prefWidth="681.0">
+         <children>
+            <TableView fx:id="dupTable" layoutY="277.0" prefHeight="217.0" prefWidth="674.0">
+              <columns>
+                <TableColumn fx:id="tblName" prefWidth="183.0" text="Name" />
+                <TableColumn fx:id="tblAge" minWidth="0.0" prefWidth="106.0" text="Age" />
+                  <TableColumn fx:id="tblTeam" prefWidth="123.0" text="Team" />
+                  <TableColumn fx:id="tblCar" prefWidth="169.0" text="Car" />
+                  <TableColumn fx:id="tblPoints" prefWidth="92.0" text="Points" />
+              </columns>
+            </TableView>
+            <Label fx:id="dupLblName" layoutX="37.0" layoutY="124.0" text="Name" />
+            <Label fx:id="dupLblCar" layoutX="44.0" layoutY="168.0" text="Car" />
+            <TextField fx:id="dupTxtName" layoutX="153.0" layoutY="120.0" prefHeight="27.0" prefWidth="193.0" styleClass="textfields" />
+            <TextField fx:id="dupTxtCar" layoutX="153.0" layoutY="164.0" prefHeight="27.0" prefWidth="193.0" styleClass="textfields" />
+            <Button fx:id="dupBtnCancel" layoutX="573.0" layoutY="236.0" mnemonicParsing="false" onAction="#onCancelClick" styleClass="buttons" text="cancel" />
+            <Button fx:id="dupBtnApply" layoutX="509.0" layoutY="237.0" mnemonicParsing="false" onAction="#onApplyClick" styleClass="buttons" text="Apply" />
+            <Button fx:id="dupBtnChange" disable="true" layoutX="399.0" layoutY="236.0" mnemonicParsing="false" onAction="#onChangeClick" styleClass="buttons" text="don,t change" />
+            <Label fx:id="dupLblWarn" layoutX="144.0" layoutY="142.0" text="change either name or car" textFill="#f20606" visible="false" />
+            <ImageView fitHeight="77.0" fitWidth="721.0" layoutX="-14.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/wrc.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Label id="dupLblHead" fx:id="dupLblHead" layoutX="144.0" layoutY="81.0" prefHeight="19.0" prefWidth="432.0" textFill="#d71313" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>

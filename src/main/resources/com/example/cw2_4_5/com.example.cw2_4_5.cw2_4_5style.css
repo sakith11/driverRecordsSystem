@@ -1,0 +1,71 @@
+
+.table-view
+{
+    -fx-background-color: transparent;
+
+}
+
+
+.headerButtons
+{
+-fx-background-color:"#1F2A44";
+-fx-border-width: 2px ;
+-fx-border-color:"fc4e00";
+-fx-border-radius: 10px;
+}
+.table-view.column-header-background
+{
+   // -fx-background-color: linear-gradient(to bottom, #1F2A44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;//
+
+}
+.textfields
+{
+    -fx-border-top: none;
+    -fx-border-color:"fc4e00"
+
+}
+.label
+{
+-fx-font-family: "sans-serif";
+
+}
+.anchorpane
+{
+-fx-background-color:"white";
+}
+.buttons
+{
+  -fx-border-color:"fc4e00";
+  -fx-background-color:"white";
+  -fx-text-fill:"fc4e00";
+}
+.buttons:hover
+{
+  -fx-border-color:"#1F2A44";
+}
+.dropdown
+{
+  -fx-border-color:"fc4e00";
+  -fx-background-color:"white";
+
+}
+.table-viw
+{
+fx-background-color: white;
+    -fx-text-fill:"#1F2A44";
+}
+
+.table-view .column-header{
+    -fx-background-color:"white";
+    -fx-text-fill:"fc4e00";
+}
+
+.table-view{
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+

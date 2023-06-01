@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1091.0" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw2_4_5.dataController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="1091.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/wrc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="114.0" text="Export driver detail to a text file" />
+      <ChoiceBox fx:id="dataChoice" layoutX="14.0" layoutY="150.0" prefWidth="150.0" styleClass="dropdown" />
+      <Button fx:id="dataBtnExportDr" layoutX="195.0" layoutY="150.0" mnemonicParsing="false" onAction="#onExportDClick" styleClass="buttons" text="export" />
+      <Label layoutX="19.0" layoutY="204.0" text="make a local back up" />
+      <Button fx:id="DataBackup" layoutX="20.0" layoutY="242.0" mnemonicParsing="false" onAction="#onBackupClick" styleClass="buttons" text="backup" />
+      <Label layoutX="17.0" layoutY="290.0" text="import files" />
+      <Button fx:id="DataBtnImportDr" layoutX="19.0" layoutY="321.0" mnemonicParsing="false" onAction="#onImportDrClick" prefHeight="27.0" prefWidth="150.0" styleClass="buttons" text="import driver records " />
+      <Button fx:id="dataBtnMEnu" layoutX="10.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnMenuClick" styleClass="headerButtons" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" text="menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="editbtnMinimize" layoutX="947.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMinClick" prefHeight="31.0" prefWidth="81.0" styleClass="headerButtons" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" text="Minimize" textFill="WHITE" />
+      <Button fx:id="posBtnClose" layoutX="1028.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="31.0" prefWidth="57.0" styleClass="headerButtons" stylesheets="@com.example.cw2_4_5.cw2_4_5style.css" text="close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="DataBtnImportRa" layoutX="21.0" layoutY="366.0" mnemonicParsing="false" onAction="#onImportRaClick" prefHeight="27.0" prefWidth="150.0" styleClass="buttons" text="import race details" />
+      <Button fx:id="dataBtnImportDel" layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#onImportDelClick" prefHeight="27.0" prefWidth="150.0" styleClass="buttons" text="import deleted drivers" />
+      <Button fx:id="dataBtnDel" layoutX="21.0" layoutY="503.0" mnemonicParsing="false" onAction="#onDelClick" prefHeight="27.0" prefWidth="150.0" styleClass="buttons" text="delete " />
+      <Label layoutX="23.0" layoutY="470.0" text="empty the deleted driver list " />
+   </children>
+</AnchorPane>
